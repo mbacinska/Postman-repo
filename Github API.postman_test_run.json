@@ -1,0 +1,287 @@
+{
+	"id": "96e03992-9c81-47b3-b560-df82e4c4d4c2",
+	"name": "Github API",
+	"allTests": [],
+	"timestamp": "2019-12-19T07:12:19.067Z",
+	"collection_id": "1d59dea8-1522-4396-9988-a4067adbf6dc",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "9bdfc5ff-be94-41a7-9fe1-d7516f62663d",
+	"data": [],
+	"delay": 0,
+	"count": 2,
+	"collection": {
+		"id": "1d59dea8-1522-4396-9988-a4067adbf6dc",
+		"name": "Github API",
+		"order": [
+			"d1e2e18b-cbfd-4476-b8b6-83a94d2e9497",
+			"48e1b5d0-a041-4dfc-bac2-1dd41fab3e44",
+			"2f080e54-dad3-441a-9775-774851cc7b8d",
+			"8f14c4f0-09c7-446f-831c-107fdeb7f505"
+		],
+		"folders_order": [],
+		"isFavorite": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": null,
+	"results": [
+		{
+			"name": "Create repository",
+			"id": "d1e2e18b-cbfd-4476-b8b6-83a94d2e9497",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Check repository name": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Check repository name": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				"1670",
+				"1404"
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Check repository name": true
+				},
+				{
+					"Status code is 201": true,
+					"Check repository name": true
+				}
+			],
+			"time": "1404",
+			"totalRequestTime": 3074,
+			"iterationResults": {}
+		},
+		{
+			"name": "Create issue",
+			"id": "48e1b5d0-a041-4dfc-bac2-1dd41fab3e44",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Check label": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Check label": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				"899",
+				"646"
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Check label": true
+				},
+				{
+					"Status code is 201": true,
+					"Check label": true
+				}
+			],
+			"time": "646",
+			"totalRequestTime": 1545,
+			"iterationResults": {}
+		},
+		{
+			"name": "Delete repository",
+			"id": "2f080e54-dad3-441a-9775-774851cc7b8d",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				"416",
+				"419"
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				},
+				{
+					"Status code is 204": true
+				}
+			],
+			"time": "419",
+			"totalRequestTime": 835,
+			"iterationResults": {}
+		},
+		{
+			"name": "Get deleted repository",
+			"id": "8f14c4f0-09c7-446f-831c-107fdeb7f505",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				"288",
+				"236"
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				},
+				{
+					"Status code is 404": true
+				}
+			],
+			"time": "236",
+			"totalRequestTime": 524,
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 12,
+	"totalFail": 0,
+	"totalTime": 5978,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "Create repository",
+			"id": "d1e2e18b-cbfd-4476-b8b6-83a94d2e9497",
+			"url": "https://api.github.com/user/repos",
+			"time": "1404",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Check repository name": {
+					"pass": 2,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Create issue",
+			"id": "48e1b5d0-a041-4dfc-bac2-1dd41fab3e44",
+			"url": "https://api.github.com/repos/mbacinska/Postman-repo-w1dr8rma8fp/issues",
+			"time": "646",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Check label": {
+					"pass": 2,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Delete repository",
+			"id": "2f080e54-dad3-441a-9775-774851cc7b8d",
+			"url": "https://api.github.com/repos/mbacinska/Postman-repo-w1dr8rma8fp",
+			"time": "419",
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 2,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Get deleted repository",
+			"id": "8f14c4f0-09c7-446f-831c-107fdeb7f505",
+			"url": "https://api.github.com/repos/mbacinska/Postman-repo-w1dr8rma8fp",
+			"time": "236",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 2,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
